@@ -1,5 +1,4 @@
 # PHREEQC
-OCC + ULYSSES
 
 Authors of the PHREEQC code: David L. Parkhurst and C.A.J. Appelo
 
@@ -12,10 +11,10 @@ http://www.jh-inst.cas.cz/~liska/Phreeqc.htm
 
 IMPORTANT !!!
 Although this app is composed of open-source codes and resources, licenses for some components require the users to cite the original references when publishing the results. Please check all the licensing information under the buttons 'License' and 'About the app'.
-All the users of the QuantumChemDroid app comply by downloading, installing and using it with all the licensing conditions of the individual software components and take the responsibility for keeping them. 
+All the users of the PHREEQC app comply by downloading, installing and using it with all the licensing conditions of the individual software components and take the responsibility for keeping them. 
 
-License: The QuantumChemDroid app repository (except from the binary content in /app/src/main/jniLibs/) itself is covered by GPL3 license. However, the included third-party software as well as the corresponding documentation retains the original licenses - please see the individual entries below. 
-App source code: https://github.com/alanliska/QuantumChemDroid
+License: The PHREEQC app repository (except from the binary content in /app/src/main/jniLibs/) itself is covered by GPL3 license. However, the included third-party software as well as the corresponding documentation retains the original licenses - please see the individual entries below. 
+App source code: https://github.com/alanliska/PHREEQC
 
 Contact:
 Compilation of the source code for Android as well as the Android app development was done by Alan Liška (alan.liska@jh-inst.cas.cz) and Veronika Růžičková (sucha.ver@gmail.com), J. Heyrovský Institute of Physical Chemistry of the CAS, v.v.i., Dolejškova 3/2155, 182 23 Praha 8, Czech Republic.
