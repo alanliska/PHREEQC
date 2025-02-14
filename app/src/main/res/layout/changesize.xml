@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/Label"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Preferences\n"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+        <TextView
+            android:id="@+id/ChangeInputSize"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Change input field text size:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+        <Spinner
+            android:id="@+id/InputSpinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id="@+id/ChangeOutputSize"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Change output field text size:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+        <Spinner
+            android:id="@+id/OutputSpinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            />
+        <Button
+            android:id="@+id/Quit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BACK" />
+    </LinearLayout>
+</ScrollView>

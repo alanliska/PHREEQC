@@ -1,0 +1,10 @@
+TITLE CaCO3 + HCl -> CaCl2 + H2O + CO2
+SOLUTION 1
+units mol/L
+temp 25.0
+pH 7.00 charge
+Cl 0.2
+EQUILIBRIUM_PHASES 1
+Calcite 0
+CO2(g) -3.4
+END

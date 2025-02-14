@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/license_label"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Full-text licenses of used third-party software:\n"
+            android:textAppearance="@android:style/TextAppearance.StatusBar.Title" />
+
+        <Button
+            android:id="@+id/license0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LICENSE-ACPDFVIEW" />
+        <Button
+            android:id="@+id/android_shell"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LICENSE-ANDROID-SHELL" />
+        <Button
+            android:id="@+id/licenseGV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LICENSE-GRAPHVIEW" />
+        <Button
+            android:id="@+id/license1_gmp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LICENSE1-GMP" />
+        <Button
+            android:id="@+id/license2_gmp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LICENSE2-GMP" />
+        <Button
+            android:id="@+id/license_phreeqc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LICENSING TERMS-PHREEQC" />
+        <Button
+            android:id="@+id/quit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="QUIT" />
+
+    </LinearLayout>
+</ScrollView>
