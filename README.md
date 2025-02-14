@@ -8,17 +8,13 @@ https://wwwbrr.cr.usgs.gov/projects/GWC_coupled/phreeqc/
 http://www.jh-inst.cas.cz/~liska/PHREEQC2.htm
 http://www.jh-inst.cas.cz/~liska/Phreeqc.htm
 
+App source code: https://github.com/alanliska/PHREEQC
+The PHREEQC app repository (except from the binary content in /app/src/main/jniLibs/) itself is covered by GPL3 license. However, the included third-party software as well as the corresponding documentation retains the original licenses - please see the individual entries below. 
 
-IMPORTANT !!!
-Although this app is composed of open-source codes and resources, licenses for some components require the users to cite the original references when publishing the results. Please check all the licensing information under the buttons 'License' and 'About the app'.
+IMPORTANT! Although this app is composed of open-source codes and resources, licenses for some components require the users to cite the original references when publishing the results. Please check all the licensing information under the License button and also in the following list.
 All the users of the PHREEQC app comply by downloading, installing and using it with all the licensing conditions of the individual software components and take the responsibility for keeping them. 
 
-License: The PHREEQC app repository (except from the binary content in /app/src/main/jniLibs/) itself is covered by GPL3 license. However, the included third-party software as well as the corresponding documentation retains the original licenses - please see the individual entries below. 
-App source code: https://github.com/alanliska/PHREEQC
-
-Contact:
-Compilation of the source code for Android as well as the Android app development was done by Alan Liška (alan.liska@jh-inst.cas.cz) and Veronika Růžičková (sucha.ver@gmail.com), J. Heyrovský Institute of Physical Chemistry of the CAS, v.v.i., Dolejškova 3/2155, 182 23 Praha 8, Czech Republic.
-Website: http://www.jh-inst.cas.cz/~liska/MobileChemistry.htm
+The software has not received any approval by the U.S. Geological Survey (USGS). No warranty, expressed or implied, is made by the USGS or the U.S. Government as to the functionality of the software and related material nor shall the fact of release constitute any such warranty. The software is provided on the condition that neither the USGS nor the U.S. Government shall be held liable for any damages resulting from the authorized or unauthorized use of the software.
 
 List of used third-party software:
 ACPDFVIEW, ANDROID SHELL, GMP, GRAPHVIEW, PHREEQC.  
