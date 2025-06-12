@@ -83,6 +83,7 @@ public class MainActivity extends AppCompatActivity {
     private Button openDatabasefile;
     private Button openIntDatabasefile;
     Button searchDatabase;
+    Button viewDatabase;
     Button deleteFiles;
 
     @Override
@@ -143,6 +144,8 @@ public class MainActivity extends AppCompatActivity {
         RunProgram.setOnClickListener(RunProgramClick);
         searchDatabase = (Button) findViewById(R.id.searchDatabase);
         searchDatabase.setOnClickListener(searchDatabaseClick);
+        viewDatabase = (Button) findViewById(R.id.viewDatabase);
+        viewDatabase.setOnClickListener(viewDatabaseClick);
         saveOutputfile = (Button) findViewById(R.id.saveOutputfile);
         saveOutputfile.setOnClickListener(saveOutputfileClick);
         saveExtOutputfile = (Button) findViewById(R.id.saveExtOutputfile);
@@ -986,7 +989,7 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onClick(DialogInterface dialog, int id) {
                         String SearchedString = editText10.getText().toString();
-                        com.jrummyapps.android.shell.Shell.SH.run("cd "+getFilesDir()+"/ ; grep -C 3 "+SearchedString+" Database-phreeqc.txt > Input.out");
+                        com.jrummyapps.android.shell.Shell.SH.run("cd "+getFilesDir()+"/ ; grep -a -C 3 '"+SearchedString+"' Database-phreeqc.txt > Input.out");
                         output2(exec("cat "+getFilesDir()+"/Input.out"));
                         output3(exec("cat "+getFilesDir()+"/Input-phreeqc.txt"));
                         output4(exec("cat "+getFilesDir()+"/Database-name.txt"));
@@ -1014,6 +1017,28 @@ public class MainActivity extends AppCompatActivity {
 
         dialog.show();
 
+    }
+
+    private View.OnClickListener viewDatabaseClick; {
+
+        viewDatabaseClick = new View.OnClickListener() {
+            public void onClick(View v) {
+                // TODO Auto-generated method stub //
+                String Inputfile = InputFile.getText().toString();
+                try {
+                    FileOutputStream fileout = openFileOutput("Input-phreeqc.txt", MODE_PRIVATE);
+                    OutputStreamWriter outputWriter = new OutputStreamWriter(fileout);
+                    outputWriter.write(Inputfile);
+                    outputWriter.close();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+                com.jrummyapps.android.shell.Shell.SH.run("cd "+getFilesDir()+"/ ; cat Database-phreeqc.txt > Input.out");
+                output2(exec("cat "+getFilesDir()+"/Input.out"));
+                output3(exec("cat "+getFilesDir()+"/Input-phreeqc.txt"));
+                output4(exec("cat "+getFilesDir()+"/Database-name.txt"));
+            }
+        };
     }
 
     private View.OnClickListener saveInputfileClick; {
